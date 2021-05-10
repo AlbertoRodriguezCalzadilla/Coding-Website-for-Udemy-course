@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Front page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                	<span class="glyphicon glyphicon-fire"></span> 
+                	Logo
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="BAR3.html">About</a>
+                    </li>
+                    <li>
+                        <a href="BAR2.html">Contact</a>
+                    </li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses info<span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="BAR4.html">HTML5/CSS3/Javascript course</a></li>
+							<li><a href="BAR5.html">MSQL course</a></li>
+							<li><a href="BAR6.html">Full HTML/CSS/Javascript/MSQL course</a></li>
+						</ul>
+                    </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languaje<span class="caret"></span></a>
+                            <ul mou class="dropdown-menu" aria-labelledby="about-us">
+                                <li><button onclick="Eng()" style="color: black;">English</button></li>
+                                <li><button onclick="Esp()" style="color: black;">Español</button></li>
+                            </ul>
+                        </li>
+                </ul>
+				<!-- Search -->
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control">
+					</div>
+					<button style="background-color: rgb(190, 190, 190);" type="submit" class="btn btn-default">Search</button>
+				</form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <nav id="ES2" style="display: none;" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="background-color: black;" class="navbar-brand" href="#">
+                	<span class="glyphicon glyphicon-fire"></span> 
+                	Logo
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div style="background-color: black;" class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="BAR3.html">Información del sitio</a>
+                    </li>
+                    <li>
+                        <a href="BAR2.html">Contactos</a>
+                    </li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Información de los cursos<span class="caret"></span></a>
+						<ul mou class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="BAR4.html">Curso de HTML5/CSS3/Javascript</a></li>
+							<li><a href="BAR5.html">Curso de MSQL</a></li>
+							<li><a href="BAR6.html">Curso completo de HTML/CSS/Javascript/MSQL</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Idioma<span class="caret"></span></a>
+						<ul mou class="dropdown-menu" aria-labelledby="about-us">
+							<li><button onclick="Esp()" style="color: black;">Español</button></li>
+							<li><button onclick="Eng()" style="color: black;">English</button></li>
+						</ul>
+					</li>
+                </ul>
+				<!-- Search -->
+				<form style="background-color: rgb(0, 0, 0);" class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control">
+					</div>
+					<button style="background-color: rgb(190, 190, 190);" type="submit" class="btn btn-default">Buscador</button>
+				</form>
+            </div>
+        </div>
+    </nav>
+    <div>
+    <div id="EN">
+	<div class="jumbotron feature"; style="background-color: slateblue;">
+		<div class="container">
+			<h1><span class="glyphicon glyphicon-equalizer"></span>Website of basic programming education</h1>
+			<p>A website dedicated to web designing in both english and spanish.</p>
+			<p><button style="background-color: yellow;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-default">Sign up now</button></p>           
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                  <div style="background-color: yellow;" class="container">
+                    <h1 style="color: black;">Sign Up</h1>
+                    <p style="color: black;">Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="email"><b style="color: black;">Email</b></label>
+                    <input style="color: black;" type="text" placeholder="Enter Email" name="email" required>
+              
+                    <label for="psw"><b style="color: black;">Password</b></label>
+                    <input style="color: black;" type="password" placeholder="Enter Password" name="psw" required>
+              
+                    <label for="psw-repeat"><b style="color: black;">Repeat Password</b></label>
+                    <input style="color: black;" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    
+                    <label>
+                      <input style="color: black;" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+              
+                    <p style="color: black;">By creating an account you agree to our <a style="color: black;" href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              
+                    <div class="clearfix">
+                      <button style="color: black;" style="background-color: red;" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button style="background-color: green;" style="color: black;" type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+              </script>              
+        </div>
+	</div>
+    <!-- Content -->
+    <div class="container">
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Online Courses available
+                    <small>Chose the one that suits you the most</small>
+                </h1>
+                <h3>From HTML together with CCS and Javascript up to MSQL we have every basic knowledge you might need to start your programmer carrier</h3>
+            </div>
+        </div>
+       <div class="row">
+            <article class="col-md-4 article-intro">
+                <div>
+                    <img class="img-responsive img-rounded" src="img/Frames-en-HTML.jpg" alt="">
+                </div>
+                <h3>
+                    <h3 style="color: darkred;">HTML5/CSS3/Javascript course</h3>
+                </h3><br>
+                <p>Take the course that teaches the basics of the three most used languajes for building websites.</p>
+            </article>
+            <article class="col-md-4 article-intro">
+                <div>
+                    <img class="img-responsive img-rounded" src="img/mysql-logo.jpg" alt="">
+                </div><br>
+                <h3>
+                    <h2 style="color: darkred;">MSQL course</h2>
+                </h3><br>
+                <p>Learn how to build databases and manage a businnes of your prefference with it.</p>
+            </article>
+            <article class="col-md-4 article-intro">
+                <div>
+                    <img class="img-responsive img-rounded" src="img/descarga.jpg" alt="">
+                </div>
+                <h3>
+                    <h3 style="color: darkred;">Full HTML/CSS/Javascript/MSQL course</h3>
+                </h3>
+                <p>Take the full course with every languaje included in this website sevices.</p>
+            </article>
+        </div>
+        <!-- /.row -->
+    </div>
+        <!-- /.container -->
+		<div class="footer-blurb">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 footer-blurb-item">
+						<h3><span class="glyphicon glyphicon-fire"></span>HTML5/CSS3/Javascript course</h3>
+						<p></p><br>
+						<p><a class="btn btn-default" href="BAR4.html">Sign up</a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+						<h3><span class="glyphicon glyphicon-cloud-upload"></span>MSQL course</h3>
+						<p></p><br><br><br>
+						<p><a class="btn btn-default" href="BAR5.html">Take up the offer</a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+						<h3><span class="glyphicon glyphicon-leaf"></span>Full HTML/CSS/Javascript/MSQL course</h3>
+						<p></p>
+						<p><a class="btn btn-default" href="BAR6.html">Join in</a></p>
+					</div>
+				</div>
+				<!-- /.row -->	
+			</div>
+        </div>
+</div>
+<div id="ES" style="display: none;">
+	<div class="jumbotron feature"; style="background-color: slateblue;">
+		<div class="container">
+			<h1><span class="glyphicon glyphicon-equalizer"></span>Sitio Web de aprendizaje sobre programación</h1>
+			<p>Un sitio web dedicado a la enseñanza sobre programar páginas web tanto en ingles como en español.</p>
+			<p><button style="background-color: yellow;" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="btn btn-default">Suscribase ahora</button></p>           
+            <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                  <div style="background-color: yellow;" class="container">
+                    <h1 style="color: black;">Suscribase Aquí</h1>
+                    <p style="color: black;">Por favor llene este formulario para crear su cuenta.</p>
+                    <hr>
+                    <label for="email"><b style="color: black;">Email</b></label>
+                    <input style="color: black;" type="text" placeholder="Entre su Email" name="email" required>
+              
+                    <label for="psw"><b style="color: black;">Contraseña</b></label>
+                    <input style="color: black;" type="password" placeholder="Entre su contraseña" name="psw" required>
+              
+                    <label for="psw-repeat"><b style="color: black;">Repita la contraseña</b></label>
+                    <input style="color: black;" type="password" placeholder="Repita la contraseña" name="psw-repeat" required>
+                    
+                    <label>
+                      <input style="color: black;" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recuerdela
+                    </label>
+                    <p style="color: black;">Al crear una cuenta usted esta de acuerdo con nuestros <a style="color: black;" href="#" style="color:dodgerblue">Terminos & Privacidad</a>.</p>
+                    <div class="clearfix">
+                      <button style="color: black;" style="background-color: red;" type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+                      <button style="background-color: green;" style="color: black;" type="submit" class="signupbtn">Suscribirse</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id02');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+              </script>
+		</div>
+	</div>
+    <!-- Content -->
+    <div class="container">
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Cursos online disponibles
+                    <small>Escoja el que más le apetezca</small>
+                </h1>
+                <h3>De HTML junto con CCS con Javascript a MSQL tenemos todo el conocimiento básico necesario que necesite para empezar su carrera informática</h3>
+            </div>
+        </div>
+       <div class="row">
+            <article class="col-md-4 article-intro">
+                <div>
+                    <img class="img-responsive img-rounded" src="img/Frames-en-HTML.jpg" alt="">
+                </div>
+                <h3>
+                    <h3 style="color: darkred;">Curso de HTML5/CSS3/Javascript</h3>
+                </h3><br>
+                <p>Coja el curso que enseñe lo básico de los tres lenguajes de programación más usados en la contrucción de páginas web.</p>
+            </article>
+            <article class="col-md-4 article-intro">
+                <div>
+                    <img class="img-responsive img-rounded" src="img/mysql-logo.jpg" alt="">
+                </div><br>
+                <h3>
+                    <h2 style="color: darkred;">Curso de MSQL</h2>
+                </h3><br>
+                <p>Aprenda a como construir bases de datos y administrarlas a tu preferencia.</p>
+            </article>
+            <article class="col-md-4 article-intro">
+                <div>
+                    <img class="img-responsive img-rounded" src="img/descarga.jpg" alt="">
+                </div>
+                <h3>
+                    <h3 style="color: darkred;">Curso completo de HTML/CSS/Javascript/MSQL</h3>
+                </h3>
+                <p>Coja el curso completo de cada lenguaje incluido en el servicio este sitio.</p>
+            </article>
+        </div>
+        <!-- /.row -->
+    </div>
+    <div class="footer-blurb">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 footer-blurb-item">
+                    <h3><span class="glyphicon glyphicon-fire"></span>Curso de HTML5/CSS3/Javascript</h3>
+                    <p></p><br>
+                    <p><a class="btn btn-default" href="BAR4.html">Inscribase</a></p>
+                </div>
+                <div class="col-sm-4 footer-blurb-item">
+                    <h3><span class="glyphicon glyphicon-cloud-upload"></span>Curso de MSQL</h3>
+                    <p></p><br><br><br>
+                    <p><a class="btn btn-default" href="BAR5.html">Coja la oferta</a></p>
+                </div>
+                <div class="col-sm-4 footer-blurb-item">
+                    <h3><span class="glyphicon glyphicon-leaf"></span>Curso completo de HTML/CSS/Javascript/MSQL</h3><br>
+                    <p></p>
+                    <p><a class="btn btn-default" href="BAR6.html">Unase ahora</a></p>
+                </div>
+            </div>
+            <!-- /.row -->	
+        </div>
+    </div>
+    </div>
+    <footer id="EN3">
+        <div class="small-print">
+            <div class="container">
+                <p style="font-size: 18px;"><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a></p>
+                <p style="font-size: 18px;">Copyright &copy; 2021</p>
+            </div>
+        </div>
+    </footer>
+    <footer id="ES3" style="display: none;">
+        <div class="small-print">
+            <div class="container">
+                <p style="font-size: 18px;"><a href="#">Terminos &amp; Condiciones</a> | <a href="#">Política de Privacidad</a></p>
+                <p style="font-size: 18px;">Derechos de autor &copy; 2021</p>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- IE10 viewport bug workaround -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- Placeholder Images -->
+	<script src="js/holder.min.js"></script>
+	<script>
+        function Eng(){
+    document.getElementById("ES").style.display = "none";
+    document.getElementById("EN").style.display = "block";
+	document.getElementById("ES2").style.display = "none";
+    document.getElementById("EN2").style.display = "block";
+	document.getElementById("ES3").style.display = "none";
+    document.getElementById("EN3").style.display = "block";
+        }
+        function Esp()
+        {
+    document.getElementById("ES").style.display = "block";
+    document.getElementById("EN").style.display = "none"; 
+	document.getElementById("ES2").style.display = "block";
+    document.getElementById("EN2").style.display = "none";     
+	document.getElementById("ES3").style.display = "block";
+    document.getElementById("EN3").style.display = "none"; 
+        }
+    </script>
+</body>
+</html>
