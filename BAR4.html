@@ -9,6 +9,21 @@
 	<link href="css/templatemo-style.css" rel="stylesheet" />
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .im {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .cent-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
 </head>
 <body> 
 	<!-- Contact -->
@@ -129,9 +144,9 @@
 		<main  id="EN">
         <h1 style="text-align: center;">HTML summary</h1><hr>
         <h3>What is HTML?</h3>
-        <video width="500" height="300" controls poster="img/Frames-en-HTML.jpg">
+       <div class="imgbox"><video class="cent-fit" width="500" height="300" controls poster="img/Frames-en-HTML.jpg">
             <source src="video/y2mate.com - What is HTML What Does It Do And What Is It Used For_480p.mp4" type="video/mp4">
-            </video>
+            </video></div>
 	    <h4>HTML stands for Hyper Text Markup Language<br>
             HTML is the standard markup language for creating Web pages<br>
             HTML describes the structure of a Web page<br>
@@ -151,7 +166,7 @@
                 <h4>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
 <br>
                     A browser does not display the HTML tags, but uses them to determine how to display the document:</h4>
-                    <img src="img/img_chrome.png">
+                  <div class="imgbox"><img class="cent-fit" src="img/img_chrome.png"></div>
                     <h3>HTML Page Structure</h3>
                     <h4>Below is a visualization of an HTML page structure:
 <br><br>
@@ -226,9 +241,9 @@ Use the CSS margin property for space outside the border<br>
     <main style="display: none;" id="ES">
     <h1 style="text-align: center;">Sumario sobre HTML</h1><hr>
     <h3> ¿Qué es HTML? </h3>
-    <video width="500" height="300" controls poster="img/Frames-en-HTML.jpg">
+   <div class="imgbox"><video class="cent-fit" width="500" height="300" controls poster="img/Frames-en-HTML.jpg">
         <source src="video/y2mate.com - What is HTML What Does It Do And What Is It Used For_480p.mp4" type="video/mp4">
-        </video>
+        </video></div>
 <h4> HTML son las siglas de Hyper Text Markup Language <br>
             HTML es el lenguaje de marcado estándar para crear páginas web <br>
             HTML describe la estructura de una página web <br>
@@ -248,7 +263,7 @@ Use the CSS margin property for space outside the border<br>
                 <h4> El propósito de un navegador web (Chrome, Edge, Firefox, Safari) es leer documentos HTML y mostrarlos correctamente.
 <br>
                     Un navegador no muestra las etiquetas HTML, pero las usa para determinar cómo mostrar el documento: </h4>
-                    <img src="img/img_chrome.png">
+                   <div class="imgbox"> <img class="cent-fit" src="img/img_chrome.png"></div>
                     <h3> Estructura de la página HTML </h3>
                     <h4> A continuación se muestra una visualización de la estructura de una página HTML:
 <br> <br>
