@@ -9,6 +9,21 @@
 	<link href="css/templatemo-style.css" rel="stylesheet" />
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .im {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .cent-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
 </head>
 <body> 
 	<!-- Contact -->
@@ -155,7 +170,8 @@
                 <h4>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
 <br>
                     A browser does not display the HTML tags, but uses them to determine how to display the document:</h4>
-                    <img src="img/img_chrome.png">
+                    <div class="imgbox">
+                    <img class="cent-fit" src="img/img_chrome.png"></div>
                     <h3>HTML Page Structure</h3>
                     <h4>Below is a visualization of an HTML page structure:
 <br><br>
