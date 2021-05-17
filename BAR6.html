@@ -10,6 +10,24 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <style>
+                #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
         .im {
             margin: 0;
             padding: 0;
@@ -131,6 +149,9 @@
             </div>
         </div>
     </nav>
+    <div class="imgbox">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="centfit" height="25" width="25" src="img/arrow.png"></button>
+        </div>
     <div style="background-color: rgb(207, 207, 207);">
 	<div class="container">
 	<!-- Top box -->
@@ -150,7 +171,7 @@
         <div class="imgbox">
         <video class="cent-fit" width="500" height="300" controls poster="img/Frames-en-HTML.jpg">
         <source src="video/y2mate.com - What is HTML What Does It Do And What Is It Used For_480p.mp4" type="video/mp4">
-        </video></div>
+        </video></div><br>
 	    <h4>HTML stands for Hyper Text Markup Language<br>
             HTML is the standard markup language for creating Web pages<br>
             HTML describes the structure of a Web page<br>
@@ -310,7 +331,7 @@ Use the CSS margin property for space outside the border<br>
         <h3> ¿Qué es HTML? </h3>
        <div class="imgbox"> <video class="cent-fit" width="500" height="300" controls poster="img/Frames-en-HTML.jpg">
             <source src="video/y2mate.com - What is HTML What Does It Do And What Is It Used For_480p.mp4" type="video/mp4">
-            </video></div>
+            </video></div><br>
     <h4> HTML son las siglas de Hyper Text Markup Language <br>
                 HTML es el lenguaje de marcado estándar para crear páginas web <br>
                 HTML describe la estructura de una página web <br>
@@ -475,10 +496,31 @@ Use the CSS margin property for space outside the border<br>
 				</div>
 			</div>
 		</footer> 
-        <audio autoplay>
-            <source src="msc/Dissociation.mp3" type=”audio/mp3″>
-            </audio>
 	</div>
+    <audio autoplay>
+        <source src="msc/Dissociation.mp3" type=”audio/mp3″>
+        </audio>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <!-- jQuery -->
     <script src="js/jquery-1.11.3.min.js"></script>
 
