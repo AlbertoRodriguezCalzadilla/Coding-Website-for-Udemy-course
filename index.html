@@ -7,6 +7,42 @@
     <title>Website Front page</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <style>
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+#color:hover {
+    background-color:rgb(241, 241, 92);
+}
+.im {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .cent-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -116,13 +152,15 @@
         </div>
     </nav>
     <div>
-
+        <div class="imgbox">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="centfit" height="25" width="25" src="img/unnamed.png"></button>
+        </div>
     <div id="EN">
 	<div class="jumbotron feature"; style="background-color: slateblue;">
 		<div class="container">
 			<h1><span class="glyphicon glyphicon-equalizer"></span>Website of basic programming education</h1>
 			<p>A website dedicated to web designing in both english and spanish.</p>
-			<p><button style="background-color: yellow;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-default">Sign up now</button></p>           
+			<p><button id="color" style="background-color: yellow;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-default">Sign up now</button></p>           
             <div id="id01" class="modal">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <form class="modal-content" action="/action_page.php">
@@ -236,7 +274,7 @@
 		<div class="container">
 			<h1><span class="glyphicon glyphicon-equalizer"></span>Sitio Web de aprendizaje sobre programación</h1>
 			<p>Un sitio web dedicado a la enseñanza sobre programar páginas web tanto en ingles como en español.</p>
-			<p><button style="background-color: yellow;" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="btn btn-default">Suscribase ahora</button></p>           
+			<p><button id="color" style="background-color: yellow;" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="btn btn-default">Suscribase ahora</button></p>           
             <div id="id02" class="modal">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <form class="modal-content" action="/action_page.php">
@@ -363,6 +401,27 @@
         </div>
     </footer>
 </div>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
     <!-- jQuery -->
     <script src="js/jquery-1.11.3.min.js"></script>
 
